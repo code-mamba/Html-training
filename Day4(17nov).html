@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="Day4(17nov).css">
+        
     </head>
     <body>
         <h1>Nav tag</h1>
@@ -20,9 +21,28 @@
             <figure class="Figure">
                 <img src="./images/pokemon.png" alt="Pokemon">
                 <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus 
+                    Lorem ipsum <mark>dolor</mark> sit amet consectetur adipisicing elit. Maxime possimus 
                 </figcaption>
             </figure>
+
+            <h2>Form validation</h2>
+            <form>
+                
+                <div>
+                    <label for="name">Enter Your name(Required)</label>
+                    <input id = "name"type="text" required pattern="[A-Z]{1}[a-z]{1,}">
+                </div>
+                
+                <div>
+                <label for="passwd">Enter the password</label>
+                <input id="passwd" type="password" required maxlength="12" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"/>
+                </div>
+                <div>
+                    <Label for ="telephone">Enter the mobile number</Label>
+                    <input type="tel" id="telephone" maxlength="10" pattern="[6-9]\d{9}$">
+                </div>
+                <input type="submit">
+            </form>
            </main>
         
     </body>

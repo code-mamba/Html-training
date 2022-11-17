@@ -1,5 +1,11 @@
 .Figure{
     border: 5px solid red;
-    background-color: yellow;
+    background-color: blue;
     padding: 5%;
+}
+input:valid{
+    border: 2px solid green;
+}
+input:invalid{
+    border: 1px solid red
 }
