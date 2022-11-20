@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="demo.json">
+<html manifest="demo.appcache">
     <head>
         <title>Cache Demo</title>
     </head>
@@ -7,6 +7,18 @@
         <a href="cache.html">cache</a>
         <a href="Network.html">Network</a>
         <a href="Fallback.html">fallback</a>
+
+        <script>
+
+
+            navigator.geolocation.getCurrentPosition((position)=>{console.log(position)},(err)=>{
+                console.log(err);
+            })
+
+            
+       
+           
+        </script>
       
     </body>
 </html>
