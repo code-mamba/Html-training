@@ -13,7 +13,10 @@
 
             navigator.geolocation.getCurrentPosition((position)=>{console.log(position)},(err)=>{
                 console.log(err);
+
             })
+            navigator.geolocation.watchPosition((watch)=>{console.log(watch)})
+
 
             
        

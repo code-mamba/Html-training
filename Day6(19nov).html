@@ -3,21 +3,29 @@
     <head>
         <title>Web storage</title>
         <script>
-            localStorage.setItem("Name","Dhanush");
-            localStorage.setItem("Name1","Dhanush");
-            localStorage.removeItem("Name")
-            console.log(localStorage.getItem("Name1"))
-            console.log(localStorage.getItem("Name"))
-            sessionStorage.setItem("Name2","dhanush2")
             
-            console.log(sessionStorage.getItem("Name2"))
-            const person = {name:"Danny",age:"21"}
+            
+           
+            
+            function StoreInLocal(){
+                localStorage.setItem("Name","Marvel");
+                localStorage.setItem("Name1","Dc");
+                console.log(localStorage.getItem("Name1"))
+                console.log(localStorage.getItem("Name"))
+            }
+            
+            function StoreInSession(){
+                sessionStorage.setItem("Name2","dhanush2")
+                const person = {name:"Danny",age:"21"}
 
-            sessionStorage.setItem("Person",JSON.stringify(person))
-            console.log(sessionStorage.getItem("person"))
+                sessionStorage.setItem("person",JSON.stringify(person))
+                console.log(sessionStorage.getItem("Name2"))
+                console.log(sessionStorage.getItem("person"))
+            }
         </script>
     </head>
     <body>
-
+        <button onclick=StoreInSession()>sessionStorage</button>
+        <button onclick=StoreInLocal()>LocalStorage</button>
     </body>
 </html>

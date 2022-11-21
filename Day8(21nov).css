@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+h1{
+    color: red;
+}
+
+p,
+li {
+  color: green;
+}
+li{
+    list-style: none;
+}
+li.special{
+    color: aquamarine;
+    font-weight: bold;
+}
+li em{
+    color: violet;
+}
+h1+p{
+    font-size: 200%;
+}
+a:link{
+    color: yellow;
+}
+a:visited{
+    color: blue;
+}
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+
+  
+  .box1{
+    border: 10px solid purple ;
+    background-color: darkgray;
+    padding-left: 600px;
+    margin: 50px;
+  }
+  .box2{
+    border: 0 20px solid brown;
+    background-color: orange;
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 620px;
+    
+    
+  }
+  .container{
+    
+    border: 5px solid gray;
+    margin-top: 25px;
+   
+  }
+  .p1{
+    border: 3px solid orange;
+  }
+  .p2{
+    border: 5px solid blue;
+    
+  }
