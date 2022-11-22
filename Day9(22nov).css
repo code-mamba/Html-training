@@ -1,0 +1,37 @@
+h1{
+    color: tomato;
+}
+@media(max-width:800px){
+    .para1{
+        
+        background-color: aqua;
+    }
+    .para2{
+        
+        background-color: burlywood;
+    }
+    .para3{
+        
+        background-color: chocolate;
+    }
+}
+@media(min-width:801px){
+    .para1{
+        
+        background-color: aqua;
+    }
+    .para2{
+        
+        background-color: burlywood;
+    }
+    .para3{
+        
+        background-color: chocolate;
+    }
+    .container p{
+        width: 30%;
+        float: left;
+        padding: 5px;
+    }
+    
+}
