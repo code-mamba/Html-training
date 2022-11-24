@@ -6,7 +6,7 @@ print("Socket created.")
 
 server.bind(("localhost",9999))
 
-server.listen(3)
+server.listen(1)
 print("waiting for connections")
 
 while True:
@@ -14,6 +14,6 @@ while True:
     name = client.recv(1024).decode()
     print("Connected with",address,name)
 
-    client.send(bytes("welcome client","utf-8"))
+    client.send(bytes("welcome"+name,"utf-8"))
 
     client.close()
